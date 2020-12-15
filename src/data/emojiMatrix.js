@@ -7,7 +7,7 @@ let row = [];
 const emojiMatrix = [];
 
 emojiArray.forEach((emoji, idx) => {
-    if (idx % 7 == 0 && idx != 0) {
+    if (idx % 9 === 0 && idx !== 0) {
         emojiMatrix.push(row);
         row = [];
         row.push(emoji);

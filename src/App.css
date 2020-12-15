@@ -1,5 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px 10px;
+  background-color: #F0D3F7;
+}
+
 .App {
   text-align: center;
+}
+
+.AppTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  color: #120D31;
+}
+
+.UserInput {
+  margin: 30px 0 0 0;
+  color: #302F4D;
+}
+
+input.UserInput {
+  border-radius: 3px;
+  border: 1px solid #B98EA7;
+  outline: none;
+  padding: 5px 10px;
+}
+
+input.UserInput:focus {
+  border: 1px solid #B98EA7;
+}
+
+.EmojiMeaning {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 10px 0;
+  color: #302F4D;
 }
 
 .EmojiMatrixSection {
@@ -12,9 +53,74 @@
   display: flex;
 }
 
-.EmojiItem{
+.EmojiItem {
   width: 25px;
   margin: 5px;
   padding: 2px;
   cursor: pointer;
+}
+
+.HighlightedLink {
+  color: #800080;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+.social-icons {
+  margin: 10px;
+}
+
+.social-icons i {
+  display: inline-block;
+  margin: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.connect-with {
+  margin-top: 30px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:link, a:visited, a:hover, a:active {
+  color: #800080;
+}
+
+@media (min-width: 541px) {
+  .EmojiItem {
+    width: 55px;
+  }
+}
+
+@media (max-width: 540px) {
+  .EmojiItem {
+    width: 30px;
+  }
+}
+
+@media (max-width: 426px) {
+  .EmojiItem {
+    width: 30px;
+  }
+}
+
+@media (max-width: 376px) {
+  .EmojiItem {
+    width: 25px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .EmojiItem {
+    width: 20px;
+    padding: 0px;
+  }
 }

@@ -1,3 +1,20 @@
 .App {
   text-align: center;
 }
+
+.EmojiMatrixSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.EmojiRow {
+  display: flex;
+}
+
+.EmojiItem{
+  width: 25px;
+  margin: 5px;
+  padding: 2px;
+  cursor: pointer;
+}
